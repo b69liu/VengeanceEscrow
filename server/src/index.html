@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vengeance Escrow</title>
+  <body>
+
+    <div style="height: 50px;"></div>
+    
+    <label for="escrowContractAddress"><b>Link Escrow Contract Address</b></label><br>
+    <input type="text" id="escrowContractAddress" name="escrowContractAddress"> 
+    <button type="button" id="escrowContractAddressBtn">Link Escrow</button><br><br>
+
+    
+    <label for="escrowSearchName"><b>Get My Escrow Address By Name</b></label><br>
+    <input type="text" id="escrowSearchName" name="escrowSearchName"> 
+    <button type="button" id="escrowSearchNameBtn">Get Address</button><br>
+    <div>Address: <span id="escrowSearchResult"></span></div><br><br>
+
+    <b>Create a Escrow Contract</b>
+    <table>
+
+        <tr>
+          <td><label for="newContractName">Contract Name:</label></td>
+          <td><input type="text" id="newContractName" name="newContractName"></td>
+        </tr>
+        <tr>
+          <td><label for="newContractBuyer">Contract Buyer address:</label></td>
+          <td><input type="text" id="newContractBuyer" name="newContractBuyer"></td>
+        </tr>
+        <tr>
+          <td><label for="newContractSeller">Contract Seller address:</label></td>
+          <td><input type="text" id="newContractSeller" name="newContractSeller"></td>
+        </tr>
+        <tr>
+          <td><label for="newContractPrice">Trade Price(wei):</label></td>
+          <td><input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" id="newContractPrice" name="newContractPrice"></td>
+        </tr>
+    </table>
+    <button type="button" id="createEscrowContractBtn">Create</button><br><br>
+
+    <label for="escrowGetPrice"><b>Get Trade Price</b></label><br>
+    <button type="button" id="escrowGetPriceBtn">Get Price</button><br>
+    <div>Price: <span id="escrowPriceResult"></span></div>
+    <div>Buyer need to pay: <span id="buyerNeedToPay"></span></div>
+    <div>Seller need to pay: <span id="sellerNeedToPay"></span></div>
+    <br><br>
+
+
+    <label><b>My Refundable Balance</b></label><br>
+    <button type="button" id="refundableBalanceBtn">Get Balance</button>
+    <button type="button" id="withdrawAllBtn">Withdraw All</button><br>
+    <div>Balance: <span id="refundableBalanceResult"></span></div><br><br>
+
+    <label for="buyerPay"><b>Buyer Pay(For Buyer Only)</b></label><br>
+    <input type="text" id="buyerPay" name="buyerPay" oninput="this.value=this.value.replace(/[^0-9]/g,'');"> 
+    <button type="button" id="buyerPayBtn">Pay This Amount</button><br><br>
+
+    <label for="sellerPay"><b>Seller Pay(For Seller Only)</b></label><br>
+    <input type="text" id="sellerPay" name="sellerPay" oninput="this.value=this.value.replace(/[^0-9]/g,'');"> 
+    <button type="button" id="sellerPayBtn">Pay This Amount</button><br><br>
+
+    <label for="finishPayment"><b>Finish Payment</b></label><br>
+    <button type="button" id="finishPayment">Go To Delivery Stage</button><br><br>
+
+    <label for="confirmDelivery"><b>Confirm Delivery(Buyer Only)</b></label><br>
+    <button type="button" id="confirmDelivery">I have received goods</button><br><br>
+
+    <label for="destoryContract"><b>Destory Contract(Agent Only)</b></label><br>
+    <button type="button" id="destoryContract">Destory</button><br><br>
+
+
+</body>
+
+</html>

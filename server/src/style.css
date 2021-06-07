@@ -1,0 +1,36 @@
+
+.enableEthereumButton{
+    background: rgb(10, 211, 10);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    padding: auto;
+}
+
+#finishPayment, #confirmDelivery{
+    background: rgb(15, 30, 165);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+    padding: auto;
+}
+
+#destoryContract{
+    background: rgb(199, 18, 18);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 5px;
+    padding: auto;
+}
