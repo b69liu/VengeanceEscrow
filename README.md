@@ -2,8 +2,8 @@
 
 A dapp to offer escrow for buyer and seller.
 
-Frontend: HTML + Javascript + webpack5
-Contract: Solidity + truffle
+Frontend: HTML + Javascript + webpack5 
+Contract: Solidity + truffle 
 
 This project utilizes the game theory to introduce the punishment mechanism in order to force both parties to reach the same goal.
 
